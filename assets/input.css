@@ -1,4 +1,16 @@
+/* cara import font style  */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Playwrite+NO:wght@100..400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+@layer base {
+    html {
+            font-family: "Playwrite NO", cursive;
+        }
+    } */
+
+.btn {
+    @apply px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 active:bg-blue-900
+}
 
