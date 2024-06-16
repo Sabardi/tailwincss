@@ -631,16 +631,20 @@ video {
   width: 16rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .list-inside {
@@ -667,12 +671,20 @@ video {
   flex-direction: column;
 }
 
-.gap-8 {
-  gap: 2rem;
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -760,6 +772,10 @@ video {
   word-break: break-all;
 }
 
+.break-keep {
+  word-break: keep-all;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -831,20 +847,16 @@ video {
   text-align: justify;
 }
 
-.indent-8 {
-  text-indent: 2rem;
-}
-
 .-indent-8 {
   text-indent: -2rem;
 }
 
-.-indent-4 {
-  text-indent: -1rem;
-}
-
 .indent-4 {
   text-indent: 1rem;
+}
+
+.indent-8 {
+  text-indent: 2rem;
 }
 
 .font-mono {
@@ -871,14 +883,14 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm\/6 {
   font-size: 0.875rem;
   line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1019,6 +1031,11 @@ video {
 
 .tracking-widest {
   letter-spacing: 0.3em;
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-blue-600\/100 {
@@ -1237,6 +1254,27 @@ video {
   text-decoration-thickness: 8px;
 }
 
+.before\:content-\[attr\(before\)\]::before {
+  --tw-content: attr(before);
+  content: var(--tw-content);
+}
+
+.after\:text-sm::after {
+  content: var(--tw-content);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.after\:font-bold::after {
+  content: var(--tw-content);
+  font-weight: 700;
+}
+
+.after\:content-\[\'_\2197\'\]::after {
+  --tw-content: ' ↗';
+  content: var(--tw-content);
+}
+
 .hover\:list-disc:hover {
   list-style-type: disc;
 }
@@ -1428,6 +1466,11 @@ video {
   .dark\:bg-slate-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-sky-400 {
+    --tw-text-opacity: 1;
+    color: rgb(56 189 248 / var(--tw-text-opacity));
   }
 
   .dark\:text-sky-400\/100 {
